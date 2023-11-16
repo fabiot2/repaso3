@@ -1,5 +1,3 @@
---root:
-;
 /* Orden estilos 
 1. Posicionamiento
 2. Modelo de caja
@@ -8,6 +6,34 @@
 5. Miselanea
 */
 
+:root {
+    /* Colores */
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-Blue: #1a9af7;
+    --soft-Blue:#e7f5ff;
+    --warm-Black: #201e1c;
+    --black: #282623;
+    --grey: #bababa;
+    --off-White: #FAF8F7;
+    --just-White: #fff;
+
+    /* Fuente */
+    --bt-font-size-title: 2.4rem;
+    --bt-font-size-title-alt: 1.8rem;
+    --bt-font-size-text:  1.4rem;
+    --bt-font-size-text-alt: 1.5rem;
+    --bt-font-height-title: 2.6rem;
+    --bt-font-height-title-alt: 1.8rem;
+    --bt-font-height-text: 1.8rem;
+    --bt-font-height-text-alt: 1.9rem;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 html {
     font-size: 62.5%;
@@ -17,10 +43,4 @@ html {
 
 body {
     font-size: 1.6rem;
-
-}
-*, *::after, *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }

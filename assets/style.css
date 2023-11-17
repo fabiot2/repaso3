@@ -67,7 +67,7 @@ body {
     align-self: center;
 }
 
-.header__Container {
+.header__container {
     width: 90%;
     min-width: 28rem;
     max-width: 90rem;
@@ -77,14 +77,14 @@ body {
     align-self: center;
 }
 
-.header__Title {
+.header__title {
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 2.6rem;
     color: var(--just-White);
 }
 
-.header__Parrafo {
+.header__parrafo {
     margin-block-start: 2.5rem;
     font-size: 1.4rem;
     line-height: 1.8rem;

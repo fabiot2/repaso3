@@ -176,7 +176,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem 6rem;
+    gap: 2rem 0rem;
     padding: 0 2rem;
 }
 
@@ -206,9 +206,13 @@ main {
     color: var(--secondary-Blue);
 }
 
+.table__title--tercera {
+    color: var(--warm-Black);
+}
+
+
 .table__container-info {
-    max-width: 32rem;
-    min-width: 2.3rem;
+    max-width: 23.2rem;
     margin: 0 auto;
 }
 
@@ -272,7 +276,7 @@ main {
 }
 
 .table__date {
-    width: 23.1rem;
+    width: 23.2rem;
     height: 3rem;
     margin: 0 auto;
     margin-block-start: 1.5rem;
@@ -293,4 +297,8 @@ main {
 
 .table__date--corredora {
     background-color: var(--soft-Blue);
+}
+
+.table__date--tercera {
+    background-color: var(--grey);
 }

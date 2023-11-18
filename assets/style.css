@@ -133,7 +133,7 @@ main {
 .main__exchange--container {
     width: 100%;
     height: auto;
-    padding-block: 8rem 3rem;
+    padding-block: 8rem 6rem;
     text-align: center;
 }
 
@@ -301,4 +301,108 @@ main {
 
 .table__date--tercera {
     background-color: var(--grey);
+}
+
+.product__detail--main {
+    position: relative;
+    width: 100%;
+    min-width: 32rem;
+    height: auto;
+    padding: 6rem 1.2rem;
+    background-color: var(--warm-Black);
+}
+
+.product__detail--img {
+    position: absolute;
+    top: -1rem;
+    left: calc(50% - 2rem);
+    width: 4rem ;
+    height: 2.5rem;
+    background-image: url('./icons/batata.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.product__detail--info  {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-block-end: 3.2rem;
+    min-width: 28.8rem;
+}
+
+.product__detail--title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--just-White);
+}
+
+.product__detail--text {
+    margin-block-start: 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: var(--grey);
+}
+
+.product__cards-container {
+    max-width: 90rem;
+    padding: 1.2rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.product__card {
+    width: 100%;
+    width: 28.8rem;
+    height: 15.2rem;
+    padding: 1.6rem;
+    background-color: #282623;
+    border-radius: 0.4rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0 , 0, 0.16);
+}
+
+.product__card--icon {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card__icon--clock {
+    background-image: url('./icons/clock.svg');
+}
+
+.card__icon--eye {
+    background-image: url('./icons/eye.svg');
+}
+
+.card__icon--currency {
+    background-image: url('./icons/dollar-sign.svg');
+}
+
+.card__icon--check {
+    background-image: url('./icons/check-circle.svg');
+}
+
+.product__card--title {
+    color: var(--just-White);
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-block: 1rem 1rem;
+}
+
+.product__card--text {
+    color: var(--grey);
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
 }

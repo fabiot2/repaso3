@@ -27,6 +27,10 @@
     --bt-font-height-title-alt: 1.8rem;
     --bt-font-height-text: 1.8rem;
     --bt-font-height-text-alt: 1.9rem;
+
+    /* Familia */
+    --bt-primary-font: 'DM Sans', sans-serif;
+    --bt-secondary-font: 'Inter', sans-serif;
 }
 
 *, *::after, *::before {
@@ -41,8 +45,8 @@ a {
 
 html {
     font-size: 62.5%;
-    font-family: 'DM Sans', sans-serif;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--bt-primary-font) ;
+    
 }
 
 body {
@@ -118,4 +122,175 @@ body {
     height: 0.8rem;
     margin-inline-start: 1rem;
     background-image: url('./icons/down-arrow.svg');
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-White);
+}
+
+.main__exchange--container {
+    width: 100%;
+    height: auto;
+    padding-block: 8rem 3rem;
+    text-align: center;
+}
+
+.main__exchange--img {
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+    margin-block-end: 5rem;
+    background-image: url('./img/Bitcoin.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main__exchange--text {
+    width: 90%;
+    min-width: 28.8rem;
+    max-width: 90rem;
+    margin: 0 auto;
+    margin-block: 3rem;
+}
+
+.main__exchange--text h2 {
+    margin-block-end: 3rem;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+    color: var(--warm-Black);
+}
+
+.main__exchange--text p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #757575;
+}
+
+.main__exchange--tables {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem 6rem;
+    padding: 0 2rem;
+}
+
+
+.table__container  {
+
+    width: 70%;
+    min-width: 23.5rem;
+    max-width: 32rem;
+    /* no utilizaria altura en contenedor pero si en td */
+    font-family: var(--bt-secondary-font);
+}
+
+.table__title {
+    margin-block-end: 1.5rem;
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+}
+
+.table__title--currency {
+    color: var(--bitcoin-orange);
+}
+
+.table__title--corredora {
+    color: var(--secondary-Blue);
+}
+
+.table__container-info {
+    max-width: 32rem;
+    min-width: 2.3rem;
+    margin: 0 auto;
+}
+
+.table__container-info table {
+    width: 100%;
+    height: 100%;
+}
+
+.table__container-info td {
+    width: 50%;
+    height: 3.8rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-White);
+}
+
+.table__right {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+
+.table__left {
+
+}
+
+.table__container-info .table__left-top {
+    border-radius: 1.5rem 0 0 0;
+}
+
+.table__container-info .table__right-top {
+    border-radius: 0 1.5rem  0 0;
+}
+
+.table__container-info .table__left-bottom {
+    border-radius: 0 0 0 1.5rem ;
+}
+
+.table__container-info .table__right-bottom {
+    border-radius: 0 0 1.5rem 0;
+}
+
+.exchange__indicator {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-inline-start: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.exchange__indicator--up {
+    background-image: url(./icons/trending-up.svg);
+}
+
+.exchange__indicator--down {
+    background-image: url(./icons/trending-down.svg);
+}
+
+.table__date {
+    width: 23.1rem;
+    height: 3rem;
+    margin: 0 auto;
+    margin-block-start: 1.5rem;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+}
+
+.table__date p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: var(--warm-Black);
+}
+
+.table__date--currency {
+    background-color: var(--soft-orange);
+}
+
+.table__date--corredora {
+    background-color: var(--soft-Blue);
 }

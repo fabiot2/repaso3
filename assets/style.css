@@ -51,6 +51,7 @@ html {
 
 body {
     font-size: 1.4rem;
+    min-width: 32rem;
 }
 
 .header {
@@ -58,7 +59,6 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    min-width: 32rem;
     height: 33.4rem;
     text-align: center;
     background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
@@ -173,13 +173,25 @@ main {
 
 .main__exchange--tables {
     display: flex;
+    min-height: 30rem;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem 0rem;
-    padding: 0 2rem;
+    flex-wrap: nowrap;
+    gap: 1.6rem;
+    padding: 1.2rem;
+    align-items: center;
+    max-width: 90rem;
+    margin: 0 auto;
+    overflow: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scroll-snap-align: center;
 }
 
+.main__exchange--tables::-webkit-scrollbar {
+    /* background-color: var(--soft-orange);
+    height: 3px; */
+    display: none;
+  }
 
 .table__container  {
 
@@ -302,7 +314,6 @@ main {
 .product__detail--main {
     position: relative;
     width: 100%;
-    min-width: 32rem;
     height: auto;
     padding: 6rem 1.2rem;
     background-color: var(--warm-Black);
@@ -405,7 +416,6 @@ main {
 
 .background__section {
     width: 100%;
-    min-width: 32rem;
     min-height: 38.7rem;
     padding: 6rem 0;
     background-image: url('./img/bitcoinbaby.png');
@@ -424,7 +434,6 @@ main {
 
 .plans__section--container {
     width: 100%;
-    min-width: 32rem;
     padding-block: 6.4rem;
     text-align: center;
     background-color: var(--off-White);
@@ -456,10 +465,10 @@ main {
     min-height: 30rem;
     flex-direction: row;
     flex-wrap: nowrap;
+    max-width: 60rem;
     gap: 1.6rem;
     padding: 1.2rem;
     align-items: center;
-    max-width: 90rem;
     margin: 0 auto;
     overflow: scroll;
     overscroll-behavior-x: contain;
@@ -468,34 +477,32 @@ main {
 }
 
 .plans__cards--container::-webkit-scrollbar {
-    background-color: var(--soft-orange);
-    height: 3px;
+    /* background-color: var(--soft-orange);
+    height: 3px; */
     display: none;
   }
-  .plans__cards--container::-webkit-scrollbar-thumb {
+
+  /* .plans__cards--container::-webkit-scrollbar-thumb {
     background-color: var(--bitcoin-orange);
-  }
+  } */
 
 .plans__card {
     position: relative;
-    width: 55%;
-    min-width: 19rem;
-    max-width: 30rem;
+    width: 19rem;
     height: 24.7rem;
     border-radius: 0.8rem;
     padding: 3.2rem 1.2rem 2.4rem 1.2rem;
-    margin: 0 auto;
     background-color: var(--just-White);
     box-shadow: 0 0.4rem 0.8rem rgba(89, 73, 30, 0.16) ;
 }
 
-.card__one {
-    margin-inline-start: 8.4rem;
+/* .card__one {
+    margin-inline-start: 4rem;
 }
 
 .card__three {
-    margin-inline-end: 8.4rem;
-}
+    margin-inline-end: 4rem;
+} */
 
 .plans__card--featured {
     position: absolute;
@@ -571,4 +578,34 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     vertical-align: text-bottom;
+}
+
+footer {
+    display: flex;
+    /* width: 100%; */
+    height: 15rem;
+    background-color: var(--bitcoin-orange);
+}
+
+footer section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.footer__left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+.footer__left li {
+    margin: 1rem 0;
+}
+
+.footer__left a {
+    text-decoration: none;
+    color: var(--just-White);
 }

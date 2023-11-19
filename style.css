@@ -18,8 +18,11 @@ body {
     border: 5px solid palegoldenrod;
     background-color: palegreen;
     display: grid;
-    grid-template-columns: 10rem 20rem 30rem;
-    grid-auto-rows: 15rem 25rem;
+    /* grid-auto-columns: 20rem; */
+    grid-template-rows: 20rem 20rem 20rem;
+    grid-auto-columns: 20rem ;
+    grid-auto-flow: column;
+    gap: 2rem ;
 }
 
 .item  {

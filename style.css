@@ -1,0 +1,28 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.contenedor {
+    border: 5px solid palegoldenrod;
+    background-color: palegreen;
+    display: grid;
+    grid-template-columns: 10rem 20rem 30rem;
+    grid-auto-rows: 15rem 25rem;
+}
+
+.item  {
+    border: 0.5rem solid rgb(251, 152, 152);
+    font-size: 4rem;
+}

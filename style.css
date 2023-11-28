@@ -1,117 +1,24 @@
-html {
-    font-size: 62.5%;
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
+*, *::after, *::before {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    width: 100%;
 }
 
 body {
     font-size: 1.6rem;
-    max-width: 120rem;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-.hero {
-    display: grid;
-    align-items: center;
-    padding-block-end: 4rem;
-    border-block-end: #363636 0.1rem solid;
-}
-
-.hero__text {
-    width: 100%;
-    order: 2;
-    text-align: center;
-}
-
-.hero__text--title {
-    font-size: 6rem;
-    color: rgb(22, 16, 16);
-}
-
-.hero__text--text {
-    font-size: 2rem;
-    color: #363636;
-    margin-block: 2rem 3rem;
-}
-
-.hero__text--button {
-    font-size: 2rem;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    background-color: rgb(255, 115, 0);
-    width: fit-content;
-    border-radius: 0.4rem;
-    padding: 0.8rem 1.2rem;
-    margin: 0 auto;
-}
-
-
-.hero__img {
-    width: 90%;
-    height: 90%;
-    margin: 0 auto;
-    object-fit: contain;
-    order: 1;
-}
-
-.main {
-    margin-block: 10rem;
-}
-
-.main__title {
-    color: #363636;
-    font-weight: 700;
-    margin-block-end: 3.2rem;
-    text-align: center;
-    font-size: 2rem;
-}
-
-.main__dishes--container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 15rem));
-    grid-auto-flow: minmax(15rem, 32rem);
-    gap: 2rem;
-    justify-content: center;
-}
-
-.main__dishes {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-
-.main__dishes--video {
-    grid-area: 1 / 1 / 3 / 3;
-}
-
-.main__title--menu {
-    margin-block: 8rem 4rem;
-}
-
-.main__menu--container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 15rem));
-    gap: 2rem;
-
-    margin: 0 auto;
-    width: 100%;
-    min-width: 30rem;
-    justify-content: center;
-}
-
-.menu__dishes--container {
-    background-color: rgb(255, 224, 193);
-    border-top-left-radius: 2rem;
-    padding: 1.6rem;
-}
-
-.menu__dishes--img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    font-family: 'Quicksand', sans-serif;
 }

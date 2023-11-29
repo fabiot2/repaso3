@@ -56,8 +56,9 @@ Otros */
 
 .button {
     margin-block-start: 0.4rem;
+    width: 100%;
     padding: 0.8rem 1.2rem;
-    height: 3.2rem;
+    height: 5.2rem;
     background-color: var(--text-input-field);
     border: none;
     border-radius: 0.8rem;
@@ -67,9 +68,16 @@ Otros */
 
 .button__primary {
     margin-block-start: 3.2rem;
-    height: 5.2rem;
     color: var(--white);
     background-color: var(--hospital-green);
+    cursor: pointer;
+    font-weight:bold;
+}
+
+.button__secondary {
+    color: var(--hospital-green);
+    border: solid 0.1rem var(--hospital-green);
+    background-color: var(--white);
     cursor: pointer;
     font-weight:bold;
 }

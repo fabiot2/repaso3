@@ -56,7 +56,7 @@ Otros */
 
 .button {
     margin-block-start: 0.4rem;
-    width: 100%;
+    width: 30rem;
     padding: 0.8rem 1.2rem;
     height: 5.2rem;
     background-color: var(--text-input-field);
@@ -64,6 +64,10 @@ Otros */
     border-radius: 0.8rem;
     font-size: var(--md);
     line-height: var(--lineh--md);
+}
+
+.button--mobile {
+    margin-block-start: 3.2rem;
 }
 
 .button__primary {

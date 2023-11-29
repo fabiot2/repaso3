@@ -1,0 +1,69 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    /* medidas */
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+    --lineh--sm: 1.8rem;
+    --lineh--md: 2rem;
+    --lineh--lg: 2.2rem;
+}
+
+.mobile__menu {
+    padding: 0 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.mobile__menu ul {
+    padding: 2.4rem 0;
+}
+
+.mobile__menu ul li a {
+    padding-block: 1.2rem;
+    display: block;
+}
+
+
+.mobile__menu a {
+    color: var(--black);
+    font-weight: bold;
+}
+
+.mobile__menu--categories {
+    border-block-end: 0.1rem solid var(--very-light-pink) ;
+}
+
+.menu__categories--title {
+
+}
+
+.mobile__menu--account {
+
+}
+
+.mobile__menu--info {
+    font-size: var(--sm);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.mobile__menu--info .mobile__menu--email a {
+    font-weight: 300;
+    padding: 0;
+}
+
+.mobile__menu--info .mobile__menu--signout a {
+    font-weight: 300;
+    padding: 0;
+    color: var(--hospital-green);
+}

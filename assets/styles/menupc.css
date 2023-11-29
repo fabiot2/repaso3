@@ -1,0 +1,32 @@
+.desktop__menu {
+    width: 14rem;
+    height: auto;
+    border: 0.1rem solid var(--very-light-pink);
+    border-radius: 0.6rem;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.desktop__menu ul li {
+    text-align: end;
+    font-weight: bold;
+}
+
+
+.desktop__menu ul li:last-child {
+    padding-block-start: 2rem;
+    border-block-start: 0.1rem solid var(--very-light-pink);
+}
+
+.desktop__menu ul li:last-child a {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    font-weight: 300;
+}
+
+.desktop__menu ul li a {
+    color: var(--black);
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+

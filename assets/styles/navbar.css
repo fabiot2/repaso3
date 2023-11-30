@@ -58,6 +58,7 @@
 .menu__item .menu__item--email {
     font-size: var(--sm);
     color: var(--very-light-pink);
+    margin-inline-end: 2rem;
 }
 
 .shopping-cart {

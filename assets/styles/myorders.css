@@ -1,0 +1,82 @@
+.order {
+    width: 100%;
+    min-width: 32rem;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 4rem 1.2rem;
+}
+
+.orders__title {
+    display: none;
+    font-size: var(--lg);
+    margin-block-end: 4rem;
+}
+
+.orders__container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 30rem;
+    align-self: start;
+
+} 
+
+.orders__card--container {
+    overflow-y: scroll;
+    height: 76vh;
+}
+
+.order__card {
+    width: 96%;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    margin-block-end: 1.2rem;
+    align-items: center;
+    justify-items: end;
+    margin-block-end: 2.4rem;
+}
+
+.order__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.order__date {
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.order__articles {
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+}
+
+.order__total {
+    font-weight: bold;
+}
+
+.order__icon {
+    margin-inline-start: 1.2rem;
+}
+
+
+.orders__card--container::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+.orders__card--container::-webkit-scrollbar-track {
+    background-color: var(--text-input-field);
+    border-radius: 1.2rem;
+}
+
+.orders__card--container::-webkit-scrollbar-thumb {
+    border-radius: 1.2rem;
+    background-color: var(--hospital-green); 
+}
+
+@media (max-width: 640px) {
+    .orders__title {
+        display: block;
+    }
+
+}
